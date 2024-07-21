@@ -1,0 +1,287 @@
+/* Universal Properties */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Universal Properties */
+/* navbar */
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+nav{
+    height:60px ;
+    background-color: rgba(2, 25, 57, 0.5);
+    color: black;
+    padding: 5px;
+    
+}
+ul li a{
+    color: black;
+    transition: 0.5s ;
+}
+li a:hover{
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+}
+.logo{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* navbar */
+/* About me */
+.txt{
+    height: 80px;
+}
+.About{
+    height: 300px;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.profile-image{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+.About-para-heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    
+}
+.About-para-heading h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+h1{
+    margin-top: 0px;
+    color: white;
+}
+/* About me */
+/* Service Part */
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ /* Service part */
+/* Testinomial part */
+.testinomial{
+    height: 300px;
+    background-color: skyblue;
+    color: rgb(17, 12, 23);
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+   position: relative;
+}
+.test1{
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+
+}
+.test2{
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+  
+}
+.test3{
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+   
+}
+.hope{
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+/* Testinomial */
+
+/* Achievements */
+.achievements{
+    height: 400px;
+    background-color: lightskyblue;
+    color: black;
+    display:flex;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+.attach{
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 40%;
+}
+.list{
+    display: flex;
+    flex-direction:column ;
+    margin-right: 500px;
+    position: relative;
+}
+.img{
+    position: absolute;
+    right: 8%;
+    top: 30%;
+    width: 300px;
+}
+li{
+    list-style-type:none ;
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+}
+/* Achievements */
+/* contact us */
+.submit{
+    padding: 5px;
+    border-radius: 25px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+#name{
+    width: 200px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 25px;
+    display: block;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+form{
+    background-color: slateblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#email{
+    width: 200px;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 25px;
+    display: block;
+    border: none;
+    margin: 10px;
+    padding:10px;
+}
+textarea{
+    padding: 20px;
+}
+/* contact us */
+/* footer */
+.Social-platforms{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: skyblue;
+    text-align: center;
+}
+.icons{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+.bx{
+  color:black;
+  padding: 30px;
+}
+footer p{
+    background-color: skyblue;
+    color: black;
+    margin-top: 0;
+}
+/* footer */
+/* Media Query */
+@media (max-width: 1200px) {
+    .About-para-heading {
+        margin-top: 10px;
+    }
+    .list {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    .About-para-heading h2 {
+        font-size: 25px;
+    }
+    .service {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    .service div {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+    .testinomial {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    .About-para-heading {
+        top: 40%;
+        right: 5%;
+    }
+    .achievements .attach {
+        margin-left: 0;
+    }
+    .list {
+        margin-right: 0;
+    }
+    .test1, .test2, .test3 {
+        width: 100%;
+    }
+}
+/* Medaia Query */
